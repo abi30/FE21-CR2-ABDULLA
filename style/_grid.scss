@@ -1,0 +1,93 @@
+.grid-1{
+ 
+    display: grid;
+    grid-gap: 4rem;
+    padding:2rem 0;;
+    box-sizing: border-box;
+    // grid-template-columns: repeat(auto-fit,minmax(33.33%,1fr));
+    grid-template-columns: repeat(3,1fr);
+
+    #item1{
+       border-radius: .3rem;
+        box-sizing: border-box;
+        background-color: black;
+
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+        
+        #item_image{
+            width: 100%;
+            display: block;
+            border-radius: .3rem;
+            background-size:cover;
+            object-fit: cover;
+            background-size: cover;
+            transition: 4s ease-in-out;
+            cursor:pointer;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            
+              
+              
+               &:hover {
+                  transform: scale(1.5);
+                 
+                }
+
+
+
+        }
+        #item_info{
+            text-align: center;
+            font-size:1.75rem;
+            color:$text_color;
+            // margin-top: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+.grid-2{
+    display: grid;
+    grid-gap: 3rem 10rem;
+    //  grid-column-gap: 4rem;
+    padding:2rem 0;;
+    box-sizing: border-box;
+    // grid-template-columns: repeat(auto-fit,minmax(33.33%,1fr));
+    grid-template-columns: repeat(2,1fr);
+
+    #item1{
+        border-radius: .3rem;
+         box-sizing: border-box;
+         background-color: black;
+ 
+         box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+         
+         #item_image{
+             width: 100%;
+             display: block;
+             border-radius: .3rem;
+             background-size:cover;
+             object-fit: cover;
+             background-size: cover;
+             transition: 4s ease-in-out;
+             cursor:pointer;
+             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+             
+               
+               
+                &:hover {
+                   transform: scale(1.5);
+                  
+                 }
+
+         }
+         #item_info{
+             text-align: center;
+             font-size:1.75rem;
+             color:$text_color;
+             // margin-top: 1rem;
+             padding: 1rem;
+         }
+     }
+ 
+
+}
