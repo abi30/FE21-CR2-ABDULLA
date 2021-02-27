@@ -20,7 +20,7 @@ header .logo {
   min-height: 11rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: brown;
+  background-color: #b12828;
 }
 
 header .logo #logo1 {
@@ -179,8 +179,8 @@ header nav ul li a {
 }
 
 .main-content-1 .main-content .grid-2 #item1 #item_image:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main-content-1 .main-content .grid-2 #item1 #item_info {
@@ -284,8 +284,8 @@ header nav ul li a {
 }
 
 .main-content-2 .grid-2 #item1 #item_image:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .main-content-2 .grid-2 #item1 #item_info {
@@ -356,15 +356,25 @@ footer .footer #logo1 #main_logo {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+  * {
+    margin: 0 auto;
+    padding: 0 auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
   header .logo {
     padding: 3rem;
     background-color: brown;
   }
-  header .logo #logo1 #main_logo {
-    width: 20rem;
+  header .logo #logo1 {
     text-align: center;
-    margin: 0rem;
+    margin-left: 0rem;
+  }
+  header .logo #logo1 #main_logo {
+    width: 17rem;
+    text-align: center;
+    margin-left: 2rem;
   }
   header .logo #logo2 #main_logo2 {
     width: 100%;
@@ -375,6 +385,7 @@ footer .footer #logo1 #main_logo {
     background-color: black;
     min-height: 4rem;
     margin-bottom: 2rem;
+    padding-top: 4px;
   }
   header nav ul {
     list-style-type: none;
@@ -387,9 +398,7 @@ footer .footer #logo1 #main_logo {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 8px;
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
+    padding: 6px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -462,7 +471,7 @@ footer .footer #logo1 #main_logo {
   }
   footer .footer .nav {
     width: 100%;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
   }
   footer .footer .nav ul {
     list-style-type: none;
@@ -474,11 +483,11 @@ footer .footer #logo1 #main_logo {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     padding-bottom: 3rem;
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   footer .footer #logo1 {

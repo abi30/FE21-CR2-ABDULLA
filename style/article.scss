@@ -2,39 +2,41 @@
     margin: 0 auto;
     padding: 0 auto;
     box-sizing: border-box;
-  }
+  
   
  
   
 
   main{
- width: 90%;
-
+ width: 100%;
+ 
 .my_article {
     
-    box-sizing: border-box;
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    grid-column-gap: 2.5rem;
+        box-sizing: border-box;
+        display:grid;
+        // i used it here so don't need for small content @media query ------------it work well.
+        grid-template-columns: repeat(auto-fit,minmax(480px,1fr));
+        // --------this also makes responsive page -------
+        grid-column-gap: 2.5rem;
+
     
     .article_content {
-        width: 100%;
+        width: 90%;
         padding: 30px 50px;
         margin: 40px 0;
         border-radius: .3rem;
     //  box-shadow: 0px 0px 29px 1px rgba(0, 0, 0, 0.99);
-
-     background-size:cover;
-     object-fit: cover;
-     background-size: cover;
-     transition: 7s ease-in-out;
-     cursor:pointer;
-     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-size:cover;
+        object-fit: cover;
+        background-size: cover;
+        transition: 7s ease-in-out;
+        cursor:pointer;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
         .content_img {
             float: left;
             width: 50%;
-            margin: 10px 30px;
+            margin: 10px 30px 10px 0px;
              display: block;
              border-radius: .3rem;
              background-size:cover;
@@ -59,14 +61,6 @@
 
   }
 
-
-
   }
   
-
- 
-  
-
- 
-  
-  
+}
